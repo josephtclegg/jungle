@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+    <script src="client/shaders/sunset.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-plane position="0 0 0"
+               rotation="-90 0 0"
+               width="100"
+               height="100"
+               color="white"
+               >
+      </a-plane>
+      <a-sky
+	color="#ECECEC"
+	material="shader:sunset-shader; color2: red; color1: #abf0ff;"
+	></a-sky>
+    </a-scene>
+  </body>
+</html>
