@@ -12,15 +12,16 @@
                height="5"
                color="white"
                >
-	<a-entity
-	  proctree
-	  >
-	</a-entity>
+        <a-entity
+          proctree
+          material="shader:sunset-shader; color2: red; color1: #abf0ff;"
+          >
+        </a-entity>
       </a-plane>
       <a-sky
-	color="#ECECEC"
-	material="shader:sunset-shader; color2: red; color1: #abf0ff;"
-	></a-sky>
+        color="#ECECEC"
+        material="shader:sunset-shader; color2: red; color1: #abf0ff;"
+        ></a-sky>
     </a-scene>
   </body>
 </html>
