@@ -2,7 +2,7 @@
   <head>
     <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
     <script src="client/shaders/sunset.js"></script>
-    <script src="client/scripts/proctree.js"></script>
+    <script src="client/scripts/proctree.js" type="module"></script>
   </head>
   <body>
     <a-scene>
@@ -19,7 +19,7 @@
       </a-plane>
       <a-sky
 	color="#ECECEC"
-	material="shader:sunset-shader; color2: red; color1: #abf0ff;"
+	material="shader:sunset-shader; color2: #baeeff; color1: #f7fdff;"
 	></a-sky>
     </a-scene>
   </body>
