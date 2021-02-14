@@ -72,20 +72,21 @@ AFRAME.registerComponent('jungle', {
           uniform vec3 color;
 
           void main() {
-            float w = 17.0;
-            float h = 17.0;
-            float thick = 0.4;
+            float w = 11.0;
+            float h = 11.0;
+            float thick = 0.3;
             vec4 pgreen  = vec4(3.0/255.0, 252.0/255.0, 157.0/255.0, 1.0);
             vec4 gyellow = vec4(1.0, 0.9, 0.0, 1.0); // gros!!
             vec4 white   = vec4(1.0, 1.0, 1.0, 1.0);
-            vec4 prim = white;
+            vec4 clear   = vec4(1.0, 1.0, 1.0, 0.0);
+            vec4 prim = clear;
             vec4 seco = pgreen;
             float co1 = mod(gl_FragCoord.x, w);
             float co2 = mod(gl_FragCoord.y, h);
             float no1 = 6.28*co1/w;
             float no2 = co2/h;
             no2 = no2-0.5;
-            no2 = no2*3.0;
+            no2 = no2*2.0;
 
             if(sin(no1) < no2+thick && sin(no1) > no2-thick){
               gl_FragColor = prim;
