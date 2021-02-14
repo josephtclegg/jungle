@@ -2,6 +2,7 @@
   <head>
     <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
     <script src="client/shaders/sunset.js"></script>
+    <script src="client/shaders/cloudshader.js"></script>
     <script src="client/scripts/proctree.js"></script>
     <script src="client/scripts/forrest.js"></script>
   </head>
@@ -13,11 +14,12 @@
                height="100"
                color="white"
 	       jungle="roam: 10; step: 50;"
+	       material="shader:cloud-shader; skycolr: #036ad0; cloudcolr: #ffffff; timescale: 0.002;"
                >
       </a-plane>
       <a-sky
 	color="#ECECEC"
-	material="shader:sunset-shader; color2: #baeeff; color1: #f7fdff;"
+        material="shader:cloud-shader; skycolr: #036ad0; cloudcolr: #ffffff; timescale: 0.001;"
 	></a-sky>
     </a-scene>
   </body>
